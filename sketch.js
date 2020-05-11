@@ -18,20 +18,21 @@ function clickStart() {
   document.querySelector('#backBut').style.visibility = 'hidden'; //backbutton
   document.getElementById("dot1_G").style.display="none"; //dot1
   document.getElementById("dot2_G").style.display="none";//dot2
-  document.getElementById("time1").style.display="block"; //time
+  document.getElementById("time1").style.display="block";
+  document.getElementById("control").style.display="block"; //time
   document.getElementById("line").style.left="92px";
   document.getElementById("spot1").className="Spot-current";//spot1
   document.getElementById("spot2").className="Spot-current";//spot2
   var divs = document.querySelectorAll('.dot');
-  divs.forEach(function(div) { 
+  divs.forEach(function(div) {
   div.classList.replace("dot", "dot-current");
 });
   var spots = document.querySelectorAll(".Spot-pre");
-  spots.forEach(function(div) { 
+  spots.forEach(function(div) {
   div.classList.replace("Spot-pre", "Spot-pre2");
 });
-  
-   
+
+
 
   var btnVal=document.getElementById("start");
     if(btnVal.value=="Start")
@@ -40,7 +41,7 @@ function clickStart() {
         btnVal.style.color="#ffffff";
         btnVal.style.background="#333333";
         btnVal.style.width="125px";
-        
+
     }
     else
     alert("Your treasure hunt will be abort!");
@@ -79,7 +80,22 @@ function startrun(target){
 
 
 
+
+
 function follow(){
   document.getElementById("dot2_D").style.display="none"; //dot2
-  document.getElementById("coin").style.display="block";//coin
+  document.getElementById("ontime").style.display="block";
+  document.getElementById("late").style.display="none";//time
+  document.getElementById("spot3").style.display="block";
+}
+
+function delay(){
+  document.getElementById("dot2_D").style.display="none"; //dot2
+  document.getElementById("spot3").style.display="none";
+  document.getElementById("late").style.display="block";
+  document.getElementById("ontime").style.display="none";
+}
+
+function unfollow(){
+    alert("Your treasure hunt will be abort in 5 sec!")
 }

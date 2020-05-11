@@ -24,7 +24,7 @@
   </footer>
 
   <!-- homepage -->
-   <div id="homepage">
+   <!-- <div id="homepage">
     <div class="top" align="center">
        <img class="home_top" src="img/plan.png">
     </div>
@@ -37,10 +37,10 @@
       <img src="img/planagain.png" class="planagain">
       <button id="widget"> Add widget</button>
     </div>
-  </div> 
+  </div> -->
 
  <!-- standard page -->
-   <section id="sp">
+   <!-- <section id="sp">
      <div class="top" align="center">
         <h class="title">Standard Plan</h>
         <i type="button" class="material-icons back" onclick="clickBack()">arrow_back_ios</i>
@@ -52,7 +52,7 @@
    </section>
    <script>
      document.getElementById("sp").style.display="none";
-   </script> 
+   </script> -->
 
   <!-- treasure hunt page -->
   <section id="th">
@@ -76,11 +76,9 @@
         <p class="Spot-pre" id="spot4" style="top:330px"> Amsterdam Central Station</p>
         <p class="Spot-pre" id="spot5" style="top:400px"> Van Gogh Museum</p>
       </div>
-      <!-- time -->
-      <div>
-        <p id="time1" style="position:absolute;left:40px;top:120px;display:none"> 13:20</p>
-        <p class="time" id="time2" style="top:190px"></p>
-      </div>
+
+
+
       <!-- line -->
       <div id="line" class="preivewline">
       </div>
@@ -115,19 +113,31 @@
       <img id="info2" class="info" style="top:230px;width:120px;height:auto" src="img/info2.png">
 
       <!-- control button -->
-      <div>
-          <input class="controlBut" id="ollow"style="top:140px;" type="button"value="Follow well" onclick="follow()"/>
-          <input class="controlBut" id="delay" style="top:200px;" type="button" value="Delay"/>
-          <input class="controlBut" id="unfollow"style="top:260px;" type="button"value="Unfollow"/>
+      <div id="control" style="display:none">
+          <input class="controlBut" id="ollow"style="top:140px;" type="button"value="Ontime" onclick="follow()"/>
+          <input class="controlBut" id="delay" style="top:200px;" type="button" value="Delay" onclick="delay()"/>
+          <input class="controlBut" id="unfollow"style="top:260px;" type="button"value="Unfollow" onclick="unfollow()"/>
       </div>
 
-      <img id="coin"style="position:absolute; width:43px; right:70px;top:165px;display:none"src="img/coin.png">
+      <p id="time1" style="position:absolute;left:40px;top:120px;display:none"> 13:20</p>
+
+      <!-- ontime -->
+      <div id="ontime" style="display:none">
+      <p  style="position:absolute;top:190px; left:40px;">13:22</p>
+      <img style="position:absolute; width:43px; right:70px;top:165px"src="img/coin.png">
+      </div>
+
+      <!-- delay -->
+      <div id="late" style="display:none">
+      <p style="position:absolute;top:190px; left:40px;color:#D0021B">13:29</p>
+      <p class="Spot-pre" style="top:260px"> Delft Zuid Station</p>
+      </div>
 
     </div>
   </section>
-     <script>
+     <!-- <script>
       document.getElementById("th").style.display="none";
-    </script> 
+    </script> -->
 
 
 
