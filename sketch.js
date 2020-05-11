@@ -35,13 +35,22 @@ function clickStart() {
     alert("Your treasure hunt will be abort!");
 }
 
+window.onload = function(){
+var run = document.getElementById("info1");
+var speed = 1;
+var timer = null;
+var alpha= 0;
+var btnVal=document.getElementById("start");
+run.onmouseover = function(){
+  startrun(100);
+}
 function startrun(target){
   clearInterval(timer);
   timer = setInterval(function(){
-    if(target > alpha){
-      speed = 1;
+    if(target > alpha && btnVal.value=="Stop"){
+      speed = 2;
     }else{
-      speed = -1;
+      speed = -2;
     }
     if(alpha == target){
       clearInterval(timer);
@@ -53,4 +62,5 @@ function startrun(target){
       document.title = alpha;
     }
   },0)
+}
 }

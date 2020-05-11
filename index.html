@@ -24,7 +24,7 @@
   </footer>
 
   <!-- homepage -->
-  <!-- <div id="homepage">
+  <div id="homepage">
     <div class="top" align="center">
        <img class="home_top" src="img/plan.png">
     </div>
@@ -40,10 +40,10 @@
   </div> -->
 
  <!-- standard page -->
-   <!-- <section id="sp">
+  <section id="sp">
      <div class="top" align="center">
         <h class="title">Standard Plan</h>
-        <i class="material-icons back" onclick="clickBack()">arrow_back_ios</i>
+        <i type="button" class="material-icons back" onclick="clickBack()">arrow_back_ios</i>
         <img class="sub_top" src="img/plan2.png">
      </div >
      <div class="mainbody" align="center">
@@ -52,103 +52,74 @@
    </section>
    <script>
      document.getElementById("sp").style.display="none";
-     // document.getElementById("th").style.visibility="none";
-   </script> -->
+   </script>
 
   <!-- treasure hunt page -->
   <section id="th">
-      <div class="top" align="center">
+    <div class="top" align="center">
         <h class="title">Treasure Hunt</h>
-        <i class="material-icons back"  id="backBut" onclick="clickBack()">arrow_back_ios</i>
+        <i class="material-icons back"  id="backBut" onclick="clickBack()" type="button">arrow_back_ios</i>
          <img class="sub_top" src="img/plan2.png">
-      </div >
+      </div>
 
-      <div class="mainbody" align="center">
+    <div class="mainbody" align="center">
       <p class="thintext departure"> <strong>Departure </strong> 13:20
       </p>
       <input class="Start" id="start" value="Start" onclick="clickStart();"/>
-    <!-- route plan -->
-    <div>
-      <p class="preSpot" id="spot1" style="top:120px"> Delft University of Technology</p>
-      <p class="preSpot" id="spot2" style="top:190px"> TU Delft Shared bike station</p>
-      <p class="preSpot" id="spot3" style="top:260px"> Delft Central Station</p>
-      <p class="preSpot" id="spot4" style="top:330px"> Amsterdam Central Station</p>
-      <p class="preSpot" id="spot5" style="top:400px"> Van Gogh Museum</p>
-      </div>
-    <div class="preivewline"></div>
-    <div>
-      <!-- yellowdot -->
-      <div id="yellowdot">
-        <img class="dot"id="dot1_Y"style="top:137px;"src="img/yellowdot.png">
-        <img class="dot"id="dot2_Y"style="top:207px;"src="img/yellowdot.png">
-        <img class="dot"id="dot3_Y"style="top:277px;"src="img/yellowdot.png">
-        <img class="dot"id="dot4_Y"style="top:347px;"src="img/yellowdot.png">
-        <img class="dot"id="dot4_Y"style="top:417px;"src="img/yellowdot.png">
-      </div >
-      <!-- darkgraydot -->
-      <div id="darkgraydot">
-        <img class="dot"id="dot2_D"style="top:207px;"src="img/darkgraydot.png">
-        <img class="dot"id="dot3_D"style="top:277px;"src="img/darkgraydot.png">
-        <img class="dot"id="dot4_D"style="top:347px;"src="img/darkgraydot.png">
-        <img class="dot"id="dot4_D"style="top:417px;"src="img/darkgraydot.png">
-      </div >
-      <!-- graydot -->
-      <div id="graydot">
-        <img  class="dot"id="dot1_G"style="top:137px;"src="img/graydot.png">
-        <img  class="dot"id="dot2_G"style="top:207px;"src="img/graydot.png">
-        <img  class="dot"id="dot3_G"style="top:277px;"src="img/graydot.png">
-        <img  class="dot"id="dot4_G"style="top:347px;"src="img/graydot.png">
-        <img  class="dot"id="dot4_G"style="top:417px;"src="img/graydot.png">
-      </div>
-      <div>
+      <!-- route plan -->
 
+      <!-- location -->
+      <div>
+        <p class="preSpot" id="spot1" style="top:120px"> Delft University of Technology</p>
+        <p class="preSpot" id="spot2" style="top:190px"> TU Delft Shared bike station</p>
+        <p class="preSpot" id="spot3" style="top:260px"> Delft Central Station</p>
+        <p class="preSpot" id="spot4" style="top:330px"> Amsterdam Central Station</p>
+        <p class="preSpot" id="spot5" style="top:400px"> Van Gogh Museum</p>
+      </div>
+      <!-- line -->
+      <div class="preivewline">
+      </div>
+      <!-- dot -->
+      <div>
+        <!-- yellowdot -->
+        <div id="yellowdot">
+          <img class="dot"id="dot1_Y"style="top:137px;"src="img/yellowdot.png">
+          <img class="dot"id="dot2_Y"style="top:207px;"src="img/yellowdot.png">
+          <img class="dot"id="dot3_Y"style="top:277px;"src="img/yellowdot.png">
+          <img class="dot"id="dot4_Y"style="top:347px;"src="img/yellowdot.png">
+          <img class="dot"id="dot4_Y"style="top:417px;"src="img/yellowdot.png">
+        </div>
+        <!-- darkgraydot -->
+        <div id="darkgraydot">
+          <img class="dot"id="dot2_D"style="top:207px;"src="img/darkgraydot.png">
+          <img class="dot"id="dot3_D"style="top:277px;"src="img/darkgraydot.png">
+          <img class="dot"id="dot4_D"style="top:347px;"src="img/darkgraydot.png">
+          <img class="dot"id="dot4_D"style="top:417px;"src="img/darkgraydot.png">
+        </div>
+        <!-- graydot -->
+        <div id="graydot">
+          <img  class="dot"id="dot1_G"style="top:137px;"src="img/graydot.png">
+          <img  class="dot"id="dot2_G"style="top:207px;"src="img/graydot.png">
+          <img  class="dot"id="dot3_G"style="top:277px;"src="img/graydot.png">
+          <img  class="dot"id="dot4_G"style="top:347px;"src="img/graydot.png">
+          <img  class="dot"id="dot4_G"style="top:417px;"src="img/graydot.png">
+        </div>
+      </div>
       <!-- route info -->
       <img id="info1" class="info" style="top:165px;" src="img/info1.png">
-      <script>
-        window.onload = function(){
-        var run = document.getElementById("info1");
-        var speed = 1;
-        var timer = null;
-        var alpha= 0;
-        var btnVal=document.getElementById("start");
-        run.onmouseover = function(){
-          startrun(100);
-        }
-        function startrun(target){
-          clearInterval(timer);
-          timer = setInterval(function(){
-            if(target > alpha && btnVal.value=="Stop"){
-              speed = 2;
-            }else{
-              speed = -2;
-            }
-            if(alpha == target){
-              clearInterval(timer);
-            }
-            else{
-              alpha = alpha + speed;
-              run.style.filter = 'alpha(opacity='+alpha+')';
-              run.style.opacity = alpha/100;
-              document.title = alpha;
-            }
-          },0)
-        }
-        }
-      </script>
-
       <!-- control button -->
-      <input class="controlBut" id="ollow"style="top:140px;" value="Follow well"/>
-      <input class="controlBut" id="delay" style="top:200px;"  value="Delay"/>
-      <input class="controlBut" id="unfollow"style="top:260px;" value="Unfollow"/>
+      <div>
+          <input class="controlBut" id="ollow"style="top:140px;" type="button"value="Follow well"/>
+          <input class="controlBut" id="delay" style="top:200px;" type="button" value="Delay"/>
+          <input class="controlBut" id="unfollow"style="top:260px;" type="button"value="Unfollow"/>
+        </div>
 
 
-      </div>
-    </div>
     </div>
   </section>
-    <!-- <script>
+    <script>
       document.getElementById("th").style.display="none";
-    </script> -->
+    </script>
 
 
 

@@ -1,0 +1,205 @@
+body {
+  margin-left:auto;
+  margin-right:auto;
+  width:375px;
+  height: 667px;
+  background: #000000;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p{
+  font-family: Avenir-heavy;
+  font-size: 14px;
+  color:#333333;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url(./font/Avenir.ttc); 
+}
+
+.header{
+  background: #f7f7f7;
+
+}
+.footer{
+  width:375px;
+  height: 55px;
+  position: absolute;
+  bottom:44px;
+  z-index: 2;
+}
+
+
+.top{
+  position:absolute;
+  width: 375px;
+  top:0px;
+  z-index: 1;
+}
+
+.title{
+  font-family: Avenir-heavy;
+  font-size: 16px;
+  position:relative;
+  top:40px;
+}
+.back{
+ position:absolute;
+ top:40px;
+ left:20px;
+}
+
+
+.home_top{
+  position:relative;
+  top: 50px;
+  width: 344px;
+  height: auto;
+}
+.sub_top{
+  position:relative;
+  top: 50px;
+  width: 344px;
+  height: auto;
+}
+
+.mainbody{
+  position:absolute;
+  background: #f7f7f7;
+  top:113px;
+  width:375px;
+  height:500px;
+
+}
+
+#standard{
+ position:relative;
+ top:80px;
+ margin-left:auto;
+ margin-right:auto;
+}
+#treasure{
+ position:relative;
+ top:100px;
+ margin-left:auto;
+ margin-right:auto;
+}
+.choiceBut {
+  background: #FFC917;
+  color:#333333;
+  font-size: 16px;
+  text-align: center;
+  font-family: Avenir-heavy;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 325px;
+  height: 40px;
+  border-radius: 10px;
+  border:none;
+  box-shadow:0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+
+.planagain{
+  width: 325px;
+  height:auto;
+  position:relative;
+  top:250px;
+}
+
+#widget{
+  position: relative;
+  margin-left:auto;
+  margin-right: auto;
+  background: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 120px;
+  font-size: 12px;
+  text-decoration: underline;
+  top:260px;
+}
+
+.standardplan{
+ position:relative;
+ top:60px;
+ width:331px;
+ height:auto;
+}
+
+.departure{
+ position:absolute;
+ left:42px;
+ top: 65px;
+}
+
+.Start{
+ position:absolute;
+ top:65px;
+ right:35px;
+ height:40px;
+ width:300px;
+ border-radius: 5px;
+ border:none;
+ background: #FFC917;
+ font-size: 20px;
+ font-family: Avenir-black;
+ color: #333333;
+ text-align: center;
+}
+
+
+.preivewline{
+  position:absolute;
+  top: 150px;
+  left:46px;
+  height:270px;
+  width:0px;
+  border: 1px
+  solid #E0E0E0;
+}
+
+.dot{
+ position:absolute;
+ left:39px;
+ width:15px;
+ height:15px;
+}
+
+.preSpot{
+  text-align: left;
+  position:absolute;
+  left:70px;
+  color:#999999;
+  font-family: Avenir-roman;
+}
+
+.currentSpot{
+  text-align:left;
+  position:absolute;
+  left:70px;
+  color:#333333;
+  font-family: Avenir-black;
+}
+
+
+.controlBut{
+  position:absolute;
+  left:-130px;
+  height:40px;
+  width:100px;
+  border-radius: 5px;
+  border:none;
+  background: #333333;
+  font-size: 14px;
+  font-family: Avenir-medium;
+  color: #fefefe;
+  text-align: center;
+}
