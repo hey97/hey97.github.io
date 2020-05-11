@@ -184,9 +184,17 @@ p{
 .currentSpot{
   text-align:left;
   position:absolute;
-  left:70px;
+  left:100px;
   color:#333333;
   font-family: Avenir-black;
+}
+
+.time{
+  text-align: left;
+  position:absolute;
+  left:70px;
+  color:#999999;
+  font-family: Avenir-roman;
 }
 
 

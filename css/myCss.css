@@ -182,25 +182,38 @@ p{
  height:15px;
 }
 
-.preSpot{
+.dot-current{
+ position:absolute;
+ left:85px;
+ width:15px;
+ height:15px;
+}
+
+.Spot-pre{
   text-align: left;
   position:absolute;
   left:70px;
   color:#999999;
   font-family: Avenir-roman;
 }
-
-.currentSpot{
+.Spot-pre2{
+  text-align: left;
+  position:absolute;
+  left:110px;
+  color:#999999;
+  font-family: Avenir-roman;
+}
+.Spot-current{
   text-align:left;
   position:absolute;
-  left:70px;
+  left:110px;
   color:#333333;
   font-family: Avenir-black;
 }
 
 .info{
  position:absolute;
- left:70px;
+ left:110px;
  width:12%;
  height:auto;
  opacity: 0;
@@ -218,5 +231,4 @@ p{
   font-family: Avenir-medium;
   color: #fefefe;
   text-align: center;
-
 }
