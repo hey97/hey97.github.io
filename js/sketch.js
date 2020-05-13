@@ -48,35 +48,35 @@ function clickStart() {
 }
 
 // mouse
-window.onload = function(){
-var run = document.getElementById("info1");
-var speed = 1;
-var timer = null;
-var alpha= 0;
-var btnVal=document.getElementById("start");
-run.onmouseover = function(){
-  startrun(100);
-}
-function startrun(target){
-  clearInterval(timer);
-  timer = setInterval(function(){
-    if(target > alpha && btnVal.value=="Stop"){
-      speed = 0.22;
-    }else{
-      speed = -0.22;
-    }
-    if(alpha == target){
-      clearInterval(timer);
-    }
-    else{
-      alpha = alpha + speed;
-      run.style.filter = 'alpha(opacity='+alpha+')';
-      run.style.opacity = alpha/100;
-      document.title = alpha;
-    }
-  },0)
-}
-}
+// window.onload = function(){
+// var run = document.getElementById("info1");
+// var speed = 1;
+// var timer = null;
+// var alpha= 0;
+// var btnVal=document.getElementById("start");
+// run.onmouseover = function(){
+//   startrun(100);
+// }
+// function startrun(target){
+//   clearInterval(timer);
+//   timer = setInterval(function(){
+//     if(target > alpha && btnVal.value=="Stop"){
+//       speed = 0.22;
+//     }else{
+//       speed = -0.22;
+//     }
+//     if(alpha == target){
+//       clearInterval(timer);
+//     }
+//     else{
+//       alpha = alpha + speed;
+//       run.style.filter = 'alpha(opacity='+alpha+')';
+//       run.style.opacity = alpha/100;
+//       document.title = alpha;
+//     }
+//   },0)
+// }
+// }
 
 
 function follow(){
