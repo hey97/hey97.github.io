@@ -15,64 +15,66 @@
 
 <body>
 
+
   <header class="header">
-   <img src="img/top.png">
+    <img src="img/top.png">
   </header>
 
   <footer class="footer">
-   <img src="img/footer.png" alt="footer">
+    <img src="img/footer.png" alt="footer">
   </footer>
 
   <!-- homepage -->
-   <!-- <div id="homepage">
+  <div id="homepage">
     <div class="top" align="center">
-       <img class="home_top" src="img/plan.png">
+      <img class="home_top" src="img/plan.png">
     </div>
 
     <div class="mainbody" align="center">
-     <button class="choiceBut" id="standard"onclick="clickSp()">standard plan </button>
-     <button class="choiceBut" id="treasure" onclick="clickTh()">treasure hunt</button>
+      <button class="choiceBut" id="standard" onclick="clickSp()">standard plan </button>
+      <button class="choiceBut" id="treasure" onclick="clickTh()">treasure hunt</button>
     </div>
     <div align="center">
       <img src="img/planagain.png" class="planagain">
-      <button id="widget"> Add widget</button>
-    </div>
-  </div> -->
+      <img id="widget"style="position:relative;top:260px;width:117px;"src="img/widget.png">
 
- <!-- standard page -->
-   <!-- <section id="sp">
-     <div class="top" align="center">
-        <h class="title">Standard Plan</h>
-        <i type="button" class="material-icons back" onclick="clickBack()">arrow_back_ios</i>
-        <img class="sub_top" src="img/plan2.png">
-     </div >
-     <div class="mainbody" align="center">
-       <img class="standardplan" src="img/standard.png">
-     </div>
-   </section>
-   <script>
-     document.getElementById("sp").style.display="none";
-   </script> -->
+    </div>
+  </div>
+
+  <!-- standard page -->
+  <section id="sp">
+    <div class="top" align="center">
+      <h class="title">Standard Plan</h>
+      <i type="button" class="material-icons back" onclick="clickBack()">arrow_back_ios</i>
+      <img class="sub_top" src="img/plan2.png">
+    </div>
+    <div class="mainbody" align="center">
+      <img class="standardplan" src="img/standard.png">
+    </div>
+  </section>
+  <script>
+    document.getElementById("sp").style.display = "none";
+  </script>
 
   <!-- treasure hunt page -->
-  <section id="th">
-  <script>
-   $(document).ready(function(){
-   init();
-   });
-   </script>
+  <section id="th" style="display:none">
+    <!--     <script>
+      $(document).ready(function() {
+        init();
+      });
+    </script> -->
 
 
     <div class="top" align="center">
-        <h class="title">Treasure Hunt</h>
-        <i class="material-icons back"  id="backBut" onclick="clickBack()" type="button">arrow_back_ios</i>
-         <img class="sub_top" src="img/plan2.png">
-      </div>
+      <h class="title">Treasure Hunt</h>
+      <i class="material-icons back" id="backBut" onclick="clickBack()" type="button">arrow_back_ios</i>
+      <img class="sub_top" src="img/plan2.png">
+    </div>
 
     <div class="mainbody" align="center">
       <p class="thintext departure"> <strong>Departure </strong> 13:20
       </p>
-      <input class="Start" id="start" value="Start" type="button"onclick="clickStart();"/>
+      <button class="Start" id="start" type="button" value="start" onclick="clickStart();" "onclick=" requestOrientationPermission();">Start</button>
       <!-- route plan -->
 
       <!-- location -->
@@ -93,60 +95,71 @@
       <div id="dot">
         <!-- yellowdot -->
         <div id="yellowdot">
-          <img class="dot"id="dot1_Y"style="top:137px;"src="img/yellowdot.png">
-          <img class="dot"id="dot2_Y"style="top:207px;"src="img/yellowdot.png">
-          <img class="dot"id="dot3_Y"style="top:277px;"src="img/yellowdot.png">
-          <img class="dot"id="dot4_Y"style="top:347px;"src="img/yellowdot.png">
-          <img class="dot"id="dot5_Y"style="top:417px;"src="img/yellowdot.png">
+          <img class="dot" id="dot1_Y" style="top:137px;" src="img/yellowdot.png">
+          <img class="dot" id="dot2_Y" style="top:207px;" src="img/yellowdot.png">
+          <img class="dot" id="dot3_Y" style="top:277px;" src="img/yellowdot.png">
+          <img class="dot" id="dot4_Y" style="top:347px;" src="img/yellowdot.png">
+          <img class="dot" id="dot5_Y" style="top:417px;" src="img/yellowdot.png">
         </div>
         <!-- darkgraydot -->
         <div id="darkgraydot">
-          <img class="dot"id="dot2_D"style="top:207px;"src="img/darkgraydot.png">
-          <img class="dot"id="dot3_D"style="top:277px;"src="img/darkgraydot.png">
-          <img class="dot"id="dot4_D"style="top:347px;"src="img/darkgraydot.png">
-          <img class="dot"id="dot5_D"style="top:417px;"src="img/darkgraydot.png">
+          <img class="dot" id="dot2_D" style="top:207px;" src="img/darkgraydot.png">
+          <img class="dot" id="dot3_D" style="top:277px;" src="img/darkgraydot.png">
+          <img class="dot" id="dot4_D" style="top:347px;" src="img/darkgraydot.png">
+          <img class="dot" id="dot5_D" style="top:417px;" src="img/darkgraydot.png">
         </div>
         <!-- graydot -->
         <div id="graydot">
-          <img  class="dot"id="dot1_G"style="top:137px;"src="img/graydot.png">
-          <img  class="dot"id="dot2_G"style="top:207px;"src="img/graydot.png">
-          <img  class="dot"id="dot3_G"style="top:277px;"src="img/graydot.png">
-          <img  class="dot"id="dot4_G"style="top:347px;"src="img/graydot.png">
-          <img  class="dot"id="dot5_G"style="top:417px;"src="img/graydot.png">
+          <img class="dot" id="dot1_G" style="top:137px;" src="img/graydot.png">
+          <img class="dot" id="dot2_G" style="top:207px;" src="img/graydot.png">
+          <img class="dot" id="dot3_G" style="top:277px;" src="img/graydot.png">
+          <img class="dot" id="dot4_G" style="top:347px;" src="img/graydot.png">
+          <img class="dot" id="dot5_G" style="top:417px;" src="img/graydot.png">
         </div>
       </div>
       <!-- route info -->
-      <img id="info1" class="info"style="top:165px;" src="img/info1.png">
+      <img id="info1" class="info" style="top:165px;" src="img/info1.png">
+
       <img id="info2" class="info" style="top:230px;width:120px;height:auto" src="img/info2.png">
+      <img id="shake" style="width:24px;position:absolute;left:120px;top:165px;opacity:0.6;display:none;z-index:3" src="img/shou.png">
 
       <!-- control button -->
       <div id="control" style="display:none">
-          <input class="controlBut" id="follow"style="top:140px;" type="button"value="Ontime" onclick="follow()"/>
-          <input class="controlBut" id="delay" style="top:200px;" type="button" value="Delay" onclick="delay()"/>
-          <input class="controlBut" id="unfollow"style="top:260px;" type="button"value="Unfollow" onclick="unfollow()"/>
+        <input class="controlBut" id="follow" style="top:250px;" type="button" value="Ontime" onclick="follow()" />
+        <input class="controlBut" id="delay" style="top:300px;" type="button" value="Delay" onclick="delay()" />
+        <input class="controlBut" id="unfollow" style="top:350px;" type="button" value="Unfollow" onclick="unfollow()" />
       </div>
 
       <p id="time1" style="position:absolute;left:40px;top:120px;display:none"> 13:20</p>
 
       <!-- ontime -->
       <div id="ontime" style="display:none">
-      <p  style="position:absolute;top:190px; left:40px;">13:22</p>
-      <img style="position:absolute; width:43px; right:70px;top:165px"src="img/coin.png">
+        <p style="position:absolute;top:190px; left:40px;">13:22</p>
+        <img style="position:absolute; width:43px; right:70px;top:165px" src="img/coin.png">
       </div>
 
       <!-- delay -->
       <div id="late" style="display:none">
-      <p style="position:absolute;top:190px; left:40px;color:#D0021B">13:29</p>
-      <p class="Spot-pre" style="top:260px"> Delft Zuid Station</p>
+        <p style="position:absolute;top:190px; left:40px;color:#D0021B">13:29</p>
+        <p class="Spot-pre" style="top:260px"> Delft Zuid Station</p>
       </div>
 
-          <button style="position:absolute; top:110px;right:35px;"onclick="requestOrientationPermission();">
-            Request orientation permission</button>
-    </div>
   </section>
-     <!-- <script>
-      document.getElementById("th").style.display="none";
-    </script> -->
+
+  <section class="jinggao" id="jinggao" align="center" style="display:none">
+   <button style=" width:150px; height:40px;position:relative;z-index:999;top:300px;left:5px;background-color:#333333;color:#ffffff;border-radius:10px;font-size:16px;font-family:Avenir-heavy;
+  border:none;" onclick="backhomepage()">Accept</button>
+  <img src="img/alert.png" style=" width:320px;position:relative;z-index:998;left:30px;top:-20px;">
+ </section>
+
+                                                                                                    <section class="jinggao" id="tuichu" align="center" style="display:none">
+   <button style=" width:100px; height:40px;position:relative;z-index:999;top:280px;background-color:#333333;color:#ffffff;border-radius:10px;font-size:16px;font-family:Avenir-heavy;
+  border:none;" onclick="backhomepage()">Yes</button>
+ <button style=" width:100px; height:40px;position:relative;z-index:999;top:280px;left:5px;background-color:#333333;color:#ffffff;border-radius:10px;font-size:16px;font-family:Avenir-heavy;border:none;" onclick="cancel()">Cancel</button>
+  <img src="img/tuichu.png" style=" width:320px;position:relative;z-index:998;left:30px;top:-20px;">
+ </section>
+
+
 
 
 

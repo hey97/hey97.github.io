@@ -31,16 +31,19 @@ p{
   width:375px;
   height: 55px;
   position: absolute;
-  bottom:44px;
+  top:580px;
   z-index: 2;
 }
+
+.jinggao{
+  z-index:3}
 
 
 .top{
   position:absolute;
   width: 375px;
   top:0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .title{
@@ -114,18 +117,6 @@ p{
   top:250px;
 }
 
-#widget{
-  position: relative;
-  margin-left:auto;
-  margin-right: auto;
-  background: none;
-  border-radius: 10px;
-  height: 25px;
-  width: 120px;
-  font-size: 12px;
-  text-decoration: underline;
-  top:260px;
-}
 
 .standardplan{
  position:relative;
@@ -148,22 +139,28 @@ p{
  width:300px;
  border-radius: 5px;
  border:none;
- background: #FFC917;
+ background-color: #FFC917;
  font-size: 20px;
  font-family: Avenir-black;
  color: #333333;
  text-align: center;
 }
 
+.Stop{
+ position:absolute;
+ top:70px;
+ right:35px;
+ height:30px;
+ width:100px;
+ border-radius: 5px;
+ border:none;
+ background-color: #666666;
+ font-size: 16px;
+ font-family: Avenir-heavy;
+ color: #ffffff;
+ text-align: center;
+}
 
-/* .nowline{
-  position:relative;
-  left:-145px;
-  height:80px;
-  width:0px;
-  border: 1px
-  solid #d0d0d0;
-} */
 
 .preivewline{
   position:absolute;
@@ -221,12 +218,12 @@ p{
 
 .controlBut{
   position:absolute;
-  left:-130px;
-  height:40px;
-  width:100px;
+  left:-100px;
+  height:30px;
+  width:80px;
   border-radius: 5px;
   border:none;
-  background: #333333;
+  background: #666666;
   font-size: 14px;
   font-family: Avenir-medium;
   color: #fefefe;
