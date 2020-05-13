@@ -96,3 +96,14 @@ function delay(){
 function unfollow(){
     alert("You deviated from the planned route!Your treasure hunt will be abort in 5 sec!")
 }
+
+
+function requestOrientationPermission() {
+  DeviceOrientationEvent.requestPermission()
+    .then(response => {
+      if (response == 'granted') {
+        window.addEventListener('deviceorientation', deviceTurnedHandler, true)
+      }
+    })
+    .catch(console.error)
+}
