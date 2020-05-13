@@ -47,6 +47,7 @@ function clickStart() {
     alert("Your treasure hunt will be abort!");
 }
 
+// mouse
 window.onload = function(){
 var run = document.getElementById("info1");
 var speed = 1;
@@ -60,9 +61,9 @@ function startrun(target){
   clearInterval(timer);
   timer = setInterval(function(){
     if(target > alpha && btnVal.value=="Stop"){
-      speed = 2;
+      speed = 0.22;
     }else{
-      speed = -2;
+      speed = -0.22;
     }
     if(alpha == target){
       clearInterval(timer);
@@ -76,10 +77,6 @@ function startrun(target){
   },0)
 }
 }
-
-
-
-
 
 
 function follow(){
@@ -97,5 +94,5 @@ function delay(){
 }
 
 function unfollow(){
-    alert("Your treasure hunt will be abort in 5 sec!")
+    alert("You deviated from the planned route!Your treasure hunt will be abort in 5 sec!")
 }

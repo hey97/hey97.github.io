@@ -9,8 +9,10 @@
   <link rel="stylesheet" type="text/css" href="css/myCss.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="library/p5.js" type="text/javascript" language="javascript"></script>
+  <script src="library/jquery-1.8.3.min.js" type="text/javascript" language="javascript"></script>
   <script src="library/p5.sound.min.js" type="text/javascript" language="javascript"></script>
   <script src="sketch.js" type="text/javascript" language="javascript"></script>
+  <script src="library/shake.js" type="text/javascript" language="javascript"></script>
 </head>
 
 <body>
@@ -56,6 +58,11 @@
 
   <!-- treasure hunt page -->
   <section id="th">
+  <script>
+   $(document).ready(function(){
+   init();
+   });
+   </script>
     <div class="top" align="center">
         <h class="title">Treasure Hunt</h>
         <i class="material-icons back"  id="backBut" onclick="clickBack()" type="button">arrow_back_ios</i>
